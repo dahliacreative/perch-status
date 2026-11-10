@@ -16,10 +16,9 @@ sites:
     url: https://learnwithperch.vercel.app/login
 
 status-website:
-  # Switch to `cname: status.learnwithperch.co.uk` (and drop baseUrl) only once
-  # that DNS record resolves — GitHub Pages stops serving the github.io
-  # address as soon as a custom domain is set.
-  baseUrl: /perch-status
+  # status.learnwithperch.co.uk = a CNAME to dahliacreative.github.io in
+  # Vercel's DNS for learnwithperch.co.uk.
+  cname: status.learnwithperch.co.uk
   logoUrl: https://learnwithperch.co.uk/icon-512.png
   favicon: https://learnwithperch.co.uk/favicon-96.png
   name: Perch status
