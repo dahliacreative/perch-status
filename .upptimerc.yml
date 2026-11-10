@@ -1,31 +1,32 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: dahliacreative
+repo: perch-status
 
+# What gets checked, every five minutes, from GitHub — nothing here runs on
+# Vercel or Railway, so the page still loads when Perch doesn't. Named for the
+# family or school reading it, not for the providers.
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Website
+    url: https://learnwithperch.co.uk
+  - name: Signing in
+    url: https://hq.learnwithperch.co.uk/login
+  # Up only when the database answers too (apps/api /health).
+  - name: Perch service and database
+    url: https://api-live-production-8ebc.up.railway.app/health
+  - name: Demo school (playground)
+    url: https://learnwithperch.vercel.app/login
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # Switch to `cname: status.learnwithperch.co.uk` (and drop baseUrl) only once
+  # that DNS record resolves — GitHub Pages stops serving the github.io
+  # address as soon as a custom domain is set.
+  baseUrl: /perch-status
+  logoUrl: https://learnwithperch.co.uk/icon-512.png
+  favicon: https://learnwithperch.co.uk/favicon-96.png
+  name: Perch status
+  introTitle: "Is Perch working?"
+  introMessage: Perch checks itself every five minutes from outside its own servers. If something here is red, we already know and we're on it. Questions? Email hello@learnwithperch.co.uk.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: Perch
+      href: https://learnwithperch.co.uk
