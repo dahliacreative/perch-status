@@ -25,6 +25,14 @@ status-website:
   name: Perch status
   introTitle: "Is Perch working?"
   introMessage: Perch checks itself every five minutes from outside its own servers. If something here is red, we already know and we're on it. Questions? Email hello@learnwithperch.co.uk.
+  theme: light
+  # Perch's look: cool grey ground, ink text, done green / overdue red, iris
+  # links — and no coloured left borders on the cards (they read as AI).
+  css: >-
+    :root{--body-background-color:#F4F5F9;--body-text-color:#17192B;--card-border-color:#E3E5EE;--nav-border-bottom-color:#E3E5EE;--nav-current-border-bottom-color:#3F38C4;--up-border-left-color:#E3E5EE;--down-border-left-color:#E3E5EE;--degraded-border-left-color:#E3E5EE;--down-background-color:#FDECEC;--tag-up-background-color:#18A059;--tag-down-background-color:#E5484D;--error-button-background-color:#3F38C4;--error-button-border-color:#3F38C4;--submit-button-background-color:#3F38C4;--submit-button-border-color:#3F38C4}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+    article{border-radius:14px}
+    a{color:#3F38C4}
   navbar:
     - title: Status
       href: /
